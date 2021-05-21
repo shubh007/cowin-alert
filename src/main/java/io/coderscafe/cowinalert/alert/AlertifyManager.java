@@ -41,6 +41,9 @@ public class AlertifyManager {
                         return;
                 }
                 JsonArray jsonArray = jsonObject.getAsJsonArray(CommonConstants.SESSIONS_KEY);
+                if(jsonArray == null){
+                        return;
+                }
                 int size = jsonArray.size();
                 if( size == 0){
                         return;
