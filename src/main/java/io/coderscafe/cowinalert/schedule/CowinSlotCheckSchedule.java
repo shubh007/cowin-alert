@@ -30,7 +30,7 @@ public class CowinSlotCheckSchedule {
     AlertifyManager alertifyManager;
 
     //Checks every min
-    @Scheduled(fixedRate = 1000*60)
+    @Scheduled(fixedRate = 1000*30)
     public void cronJobSch() throws Exception {
         List<String> datesToQuery = commonUtils.getDatesToQuery();
         for(String queryDate:datesToQuery){
